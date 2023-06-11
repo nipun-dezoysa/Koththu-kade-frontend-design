@@ -1,0 +1,160 @@
+
+.navg{
+    background-color: #D2001A;
+}
+.slogan{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width:100%;
+}
+
+.slogan-box{
+    padding: 2em;
+    width: 50%;
+    background-color: #f39300;
+    border-radius: 30px;
+}
+.slogan-box p,.slogan-box h2{
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slogan-box button{
+    border: none;
+    height: 50px;
+    width: 200px;
+    background-color: #D2001A;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.slogan-img{
+    width: 30%;
+}
+.slogan-img img{
+    width: 100%;
+}
+.slogan-box h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #D2001A;
+    margin-bottom: 5px;
+}
+
+.display{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.showcase{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.cart{
+    width: 20%;
+}
+.category{
+    width: 100%;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.category h1,.category p{
+    margin-left: 5px;
+}
+.itemcase{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 270px;
+    margin-bottom: 10px;
+    
+}
+.item h1{
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+.item p{
+    margin-top: 0px;
+}
+.item img{
+    width: 100%;
+}
+.item button{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+.item:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.cartitem{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    position: sticky;
+    top: 90px;
+    margin-left: 10px;
+    background-color: #03703c;
+}
+.brands{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.logo-case{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    max-width: 100px;
+}
+.logo img{
+    width: 100%;
+}
+#phonelogo{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.contact{
+    background-color: #EFEFEF;
+    width: 100%;
+}
+
+
+@media (max-width:700px) {
+    .slogan{
+        flex-direction: column;
+    }
+    .slogan-box{
+        width: 100%;
+        text-align: center;
+    }
+    .display{
+        flex-direction: column;
+    }
+    .showcase,.cart{
+        width: 100%;
+    }
+    
+}
