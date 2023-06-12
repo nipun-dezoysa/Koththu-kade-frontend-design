@@ -1,0 +1,9 @@
+.service-box{
+    display: flex;
+}
+.service-box img{
+    width: 300px;
+}
+.service-box h1{
+    margin-top: 40px;
+}

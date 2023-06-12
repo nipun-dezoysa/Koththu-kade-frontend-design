@@ -30,6 +30,13 @@
     border-radius: 10px;
     font-weight: 700;
     margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.slogan-box button:hover{
+    background-color:white;
+    color:#D2001A;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .slogan-img{
     width: 30%;
@@ -44,9 +51,36 @@
     color: #D2001A;
     margin-bottom: 5px;
 }
+.space-top{
+    margin-top: 30px;
+}
+.special{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.special-item{
+    display: flex;
+    width: 48%;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.special-box{
+    width: 50%;
+}
+.special-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.special-box p,.special-box h1{
+    margin-left: 5px;
+}
+.special-box img{
+    width: 100%;
+    border-radius: 15px;
+}
 
 .display{
-    margin-top: 20px;
     width: 100%;
     display: flex;
 }
@@ -63,6 +97,9 @@
     background-color: #EFEFEF;
     border-radius: 15px;
     margin-top: 10px;
+}
+.category h1{
+    font-size: 1.8rem;
 }
 .category h1,.category p{
     margin-left: 5px;
@@ -99,6 +136,10 @@
     color: white;
     font-weight: 700;
 }
+.side-bar{
+    position: sticky;
+    top: 90px;
+}
 .item:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -107,10 +148,91 @@
     border-radius: 10px;
     color: white;
     font-weight: 700;
-    position: sticky;
-    top: 90px;
     margin-left: 10px;
     background-color: #03703c;
+}
+.rating{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+    background-color: hsl(213, 19%, 18%);
+}
+.rating h1{
+    font-size: 1.5rem;
+}
+.rating p{
+    font-size: 1rem;
+}
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.items{
+    background-color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    transition: all 0.2s linear;
+    border: none;
+}
+.items:hover{
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+}
+.sitem{
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    transition: all 0.2s linear;
+    border: none;
+}
+.submits{
+    margin-top: 5px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px;
+    height: 30px;
+    border: none;
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s linear;
+}
+.selected{
+    margin-top: 5px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px;
+    height: 30px;
+    border: none;
+    color: hsl(25, 97%, 53%);
+    background-color:white;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s linear;
+}
+.submits:hover{
+    color: hsl(25, 97%, 53%);
+    background-color:white;
+
 }
 .brands{
     margin-top: 20px;
@@ -129,6 +251,36 @@
 .logo img{
     width: 100%;
 }
+
+.sub-case{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-item{
+    width: 350px;
+    display: flex;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sub-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.sub-box h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.sub-item-name{
+    width: 50%;
+}
+.sub-item-price{
+    width: 40%;
+}
+
 #phonelogo{
     position: fixed;
     bottom: 50px;
@@ -137,10 +289,34 @@
 }
 
 .contact{
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #EFEFEF;
     width: 100%;
 }
 
+.contact-case{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-case a{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+}
+.contact-case img{
+    position: relative;
+    width: 100%;
+    transition: all 0.1s linear;
+}
+.contact img:hover{
+    width: 200%;
+    top: -170px;
+    left: -170px;
+}
+footer{
+    margin-bottom: 0px;
+}
 
 @media (max-width:700px) {
     .slogan{
@@ -150,11 +326,27 @@
         width: 100%;
         text-align: center;
     }
-    .display{
+    .display,.sub-case{
         flex-direction: column;
     }
-    .showcase,.cart{
+    .showcase,.cart,.sub-box{
         width: 100%;
     }
+    .sub-box h1{
+        text-align: center;
+    }
+    .sub-item{
+        margin: 0 auto;
+    }
+    .special{
+        flex-direction: column;
+    }
+    .special-item{
+        width: 100%;
+        margin-top: 5px;
+    }
     
+}
+.shadow:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

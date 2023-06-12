@@ -12,23 +12,24 @@
     <title>Koththu Kade</title>
   </head>
   <body>
+    <script src="js/script.js"></script>
     <nav class="navbar navbar-expand-lg navg navbar-dark" style="position: sticky;top:0px;z-index: 1; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;">
         <div class="container">
-            <a href="#" class="navbar-brand" style="font-family: 'Brush Script MT', cursive;font-size: 2.5rem;">Koththu Kade</a>
+            <a href="index.html" class="navbar-brand" style="font-family: 'Brush Script MT', cursive;font-size: 2.5rem;">Koththu Kade</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Menu</a>
+                        <a href="index.html" style="color: white;" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="services.html" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact us</a>
+                        <a href="contactus.html" class="nav-link">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -50,28 +51,52 @@
             </div>
         </div>
 
+        <center><h1 class="space-top">-Today Specials-</h1></center>
+        <div class="special">
+            <div class="special-item">
+                <div class="special-box">
+                    <img src="images/yellow-rice-prawns-meal-for-4.jpg" alt="yellow-rice-prawns-meal-for-4">
+                </div>
+                <div class="special-box">
+                    <h1>Yellow Rice with prawns</h1>
+                    <p>Traditional Organic White Rice cooked in an aromatic Coconut Milk and Turmeric broth, with a choice of Chicken or Prawn Curry.</p>
+                    <p>LKR 1200.00</p>
+                </div>
+            </div>
+            <div class="special-item">
+                <div class="special-box">
+                    <img src="images/yellow-rice-prawns-meal-for-4.jpg" alt="yellow-rice-prawns-meal-for-4">
+                </div>
+                <div class="special-box">
+                    <h1>Yellow Rice with prawns</h1>
+                    <p>Traditional Organic White Rice cooked in an aromatic Coconut Milk and Turmeric broth, with a choice of Chicken or Prawn Curry.</p>
+                    <p>LKR 1200.00</p>
+                </div>
+            </div>
+        </div>
+
+        <center><h1 class="space-top">Menu</h1></center>
         <div class="display">
             <div class="showcase">
-
                 <div class="category">
                     <h1>Koththu</h1>
                     <div class="itemcase">
                         <div class="item">
                             <img src="images/porkkoththu.jpg">
                             <h1>Pork Koththu</h1>
-                            <p>LKR 460.0</p>
+                            <p>LKR 1600.00</p>
                             <button>Add to cart</button>
                         </div>
                         <div class="item">
                             <img src="images/chickenkottu.jpg">
                             <h1>Chicken Koththu</h1>
-                            <p>LKR 460.0</p>
+                            <p>LKR 1000.00</p>
                             <button>Add to cart</button>
                         </div>
                         <div class="item">
                             <img src="images/cheesekottu.jpg">
                             <h1>Cheese Koththu</h1>
-                            <p>LKR 460.0</p>
+                            <p>LKR 1400.00</p>
                             <button>Add to cart</button>
                         </div>
                     </div>
@@ -127,21 +152,119 @@
                 
             </div>
             <div class="cart">
-                <div class="cartitem">
-                    <h1>Buy 1, Get 1 Free.</h1>
-                    <p>*only available before march 6</p>
+                <div class="side-bar">
+                    <div class="cartitem">
+                        <h1>Buy 1, Get 1 Free.</h1>
+                        <p>*only available before march 6</p>
+                    </div>
+                    <div class="rating">
+                        <h1>How did we do?</h1>
+                        <p>Please let us know how we did with your support request. All feedback is appreciated 
+                          to help us improve our offering!</p>
+                        <div class="options">
+                          <button id="one" class="items" onclick="oii(1)">1</button>
+                          <button id="two" class="items" onclick="oii(2)">2</button>
+                          <button id="three" class="items" onclick="oii(3)">3</button>
+                          <button id="four" class="items" onclick="oii(4)">4</button>
+                          <button id="five" class="items" onclick="oii(5)">5</button>
+                        </div>
+                        <input type="button" onclick="sub()" id="submits" class="submits" value="SUBMIT">
+                      </div>
                 </div>
+                
             </div>
         </div>
 
         <div class="brands">
-            <center><h1>Our Brands</h1></center>
+            <center><h1 style="color: gray;font-size: 1rem;">-Sponsors-</h1></center>
             <div class="logo-case">
                 <div class="logo"><img src="images/elephanthouselogo.jpg"></div>
                 <div class="logo"><img src="images/cocacolalogo.jpg"></div>
                 <div class="logo"><img src="images/pepsilogo.jpg"></div>
                 <div class="logo"><img src="images/americanwaterlogo.jpg"></div>
                 <div class="logo"><img src="images/keelskrestlogo.jpg"></div>
+            </div>
+        </div>
+
+        <div class="sub-case">
+            <div class="sub-box">
+                <h1>Short Eats</h1>
+                <div class="sub-item">
+                    <div class="sub-item-name">Paratha</div>
+                    <div class="sub-item-price">LKR 60.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Beef Roti</div>
+                    <div class="sub-item-price">LKR 120.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Fish Rolls</div>
+                    <div class="sub-item-price">LKR 85.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Samosa</div>
+                    <div class="sub-item-price">LKR 80.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Egg Bun</div>
+                    <div class="sub-item-price">LKR 120.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+            </div>
+            <div class="sub-box">
+                <h1>Curries</h1>
+                <div class="sub-item">
+                    <div class="sub-item-name">Gravy</div>
+                    <div class="sub-item-price">LKR 50.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Dhal</div>
+                    <div class="sub-item-price">LKR 140.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Chicken Curry</div>
+                    <div class="sub-item-price">LKR 350.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Fish Curry</div>
+                    <div class="sub-item-price">LKR 160.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Potato Curry</div>
+                    <div class="sub-item-price">LKR 190.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+            </div>
+            <div class="sub-box">
+                <h1>Snacks and bits</h1>
+                <div class="sub-item">
+                    <div class="sub-item-name">Chocolate Rotty</div>
+                    <div class="sub-item-price">LKR 130.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Cheese Rotty</div>
+                    <div class="sub-item-price">LKR 190.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">chicken Rotty</div>
+                    <div class="sub-item-price">LKR 940.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
+                <div class="sub-item">
+                    <div class="sub-item-name">Ghee parata</div>
+                    <div class="sub-item-price">LKR 1340.00</div>
+                    <div class="sub-item-add"><span><i class="fa-solid fa-circle-plus fa-sm"></i></span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -155,13 +278,18 @@
                 <p><span><i class="fa-solid fa-location-dot fa-sm"></i></span> 112/2 Pitipana Junction, Homagama</p>
             </div>
             <a href="#">
-                <img src="" alt="">
+                <img src="images/Screenshot 2023-06-11 170110.png" alt="">
             </a>
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © <a href="#">Koththu Kade</a> Ltd. All rights reserved.2023. This website is design for <a href="https://www.nsbm.ac.lk/">NSBM university</a> Assignment by Nipun Avishka</p>
+        </div>
+    </footer>
 
-    <i id="phonelogo" class="fa-solid fa-phone fa-shake fa-2xl"></i>
+    <i id="phonelogo" class="fa-solid fa-phone fa-shake fa-2xl d-none d-lg-block"></i>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
