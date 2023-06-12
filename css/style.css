@@ -329,7 +329,7 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .display,.sub-case{
+    .display,.sub-case,.contact-case{
         flex-direction: column;
     }
     .showcase,.cart,.sub-box{
