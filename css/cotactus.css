@@ -1,12 +1,12 @@
 .send{
     display: flex;
     width: 100%;
-    margin: 10px auto;
-    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: space-evenly;
 }
 .send-cbox{
-    width: 400px;
+    max-width: 400px;
     background-color: #03703c;
     border-radius: 15px;
     color: white;
@@ -30,7 +30,7 @@
     width: 100%;
 }
 .send-box{
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     background-color: #EFEFEF;
     border-radius: 15px;
@@ -92,8 +92,21 @@ i:hover{
 @media (max-width:700px) {
     .send{
         flex-direction: column;
+        justify-content: space-between;
     }
     .send-cbox{
-        margin-bottom: 10px;
+        width: 100%;
+        margin: 10px auto;
     }
+    .send-box{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .name{
+        flex-direction: column;
+    }
+    .send-box input[type=text], select {
+        width: 100%;
+        
+      }
 }
